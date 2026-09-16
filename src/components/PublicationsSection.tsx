@@ -200,6 +200,35 @@ export const PublicationsSection: React.FC = () => {
             </div>
 
           </div>
+
+          {/* Quick Filter Topic Chips */}
+          <div className="pt-2 border-t border-stone-100 flex flex-wrap items-center gap-1.5 text-xs">
+            <span className="text-stone-500 text-[11px] font-medium mr-1">Quick Topics:</span>
+            {[
+              { label: 'All', query: '' },
+              { label: 'UPI & Fintech', query: 'UPI' },
+              { label: 'Dr. Ambedkar Thought', query: 'Ambedkar' },
+              { label: 'Agriculture & MSP', query: 'Agriculture' },
+              { label: 'NEP 2020', query: 'NEP' },
+              { label: 'Rural Credit', query: 'Credit' },
+              { label: 'Vidarbha', query: 'Vidarbha' },
+            ].map((chip) => {
+              const isActive = searchQuery === chip.query;
+              return (
+                <button
+                  key={chip.label}
+                  onClick={() => setSearchQuery(chip.query)}
+                  className={`px-2.5 py-1 rounded-full text-[11px] font-medium transition-all ${
+                    isActive
+                      ? 'bg-amber-600 text-white font-semibold shadow-xs'
+                      : 'bg-stone-100 text-stone-700 hover:bg-stone-200 hover:text-stone-900'
+                  }`}
+                >
+                  {chip.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Publications List */}

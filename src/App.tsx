@@ -13,6 +13,7 @@ import { Footer } from './components/Footer';
 import { CvModal } from './components/CvModal';
 import { SearchModal } from './components/SearchModal';
 import { PhotoModal } from './components/PhotoModal';
+import { QuickAccessDock } from './components/QuickAccessDock';
 
 export default function App() {
   const [isCvOpen, setIsCvOpen] = useState(false);
@@ -58,6 +59,12 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Floating Quick-Access Dock for Easy Access */}
+      <QuickAccessDock
+        onOpenCv={() => setIsCvOpen(true)}
+        onOpenSearch={() => setIsSearchOpen(true)}
+      />
 
       {/* Modals */}
       <CvModal isOpen={isCvOpen} onClose={() => setIsCvOpen(false)} />

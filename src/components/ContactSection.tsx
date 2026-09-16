@@ -122,10 +122,16 @@ export const ContactSection: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <Clock className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="block text-stone-900 font-serif">
-                      Student Advisory & Office Hours
-                    </strong>
-                    <span>Monday – Saturday: 8:00 AM – 02:00 PM</span>
+                    <div className="flex items-center gap-2">
+                      <strong className="block text-stone-900 font-serif">
+                        Student Advisory & Office Hours
+                      </strong>
+                      <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full border border-emerald-200">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
+                        Mon–Sat
+                      </span>
+                    </div>
+                    <span className="text-stone-800 font-medium">Monday – Saturday: 8:00 AM – 02:00 PM</span>
                     <span className="block text-[11px] text-stone-500">
                       Late M. Padole Arts College (Department of Economics)
                     </span>
@@ -137,9 +143,9 @@ export const ContactSection: React.FC = () => {
               <div className="pt-2">
                 <a
                   href={`mailto:${PROFILE_DATA.email}?subject=Academic%20Inquiry%20from%20Portfolio%20Website`}
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold shadow-sm transition-all"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-stone-900 to-stone-800 hover:from-stone-800 hover:to-stone-700 text-white text-xs font-semibold shadow-md transition-all group"
                 >
-                  <Mail className="w-4 h-4 text-amber-400" />
+                  <Mail className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
                   <span>Compose Direct Email</span>
                 </a>
               </div>

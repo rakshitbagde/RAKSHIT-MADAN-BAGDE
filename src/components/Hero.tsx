@@ -34,9 +34,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
   };
 
   return (
-    <section id="home" className="relative bg-stone-900 text-stone-100 overflow-hidden border-b border-stone-800 pt-10 pb-16 lg:py-20">
-      {/* Subtle Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]" />
+    <section id="home" className="relative bg-gradient-to-b from-stone-950 via-stone-900 to-stone-900 text-stone-100 overflow-hidden border-b border-stone-800 pt-10 pb-16 lg:py-20">
+      {/* Modern Ambient Mesh & Dot Pattern */}
+      <div className="absolute inset-0 opacity-[0.04] pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-0 left-10 w-80 h-80 bg-red-600/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -46,15 +48,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
             
             {/* Badges strip */}
             <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/15 text-amber-300 border border-amber-500/30 shadow-xs">
                 <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
                 Head of Department
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-800 text-stone-300 border border-stone-700">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-800/90 text-stone-300 border border-stone-700/80">
                 <Award className="w-3.5 h-3.5 text-amber-400" />
                 5x University Gold Medalist
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-800 text-stone-300 border border-stone-700">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-stone-800/90 text-stone-300 border border-stone-700/80">
                 <GraduationCap className="w-3.5 h-3.5 text-amber-400" />
                 Dual UGC NET-JRF Qualified
               </span>
@@ -189,15 +191,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
 
           {/* Right Column: Academic Profile Card & Quick Stats */}
           <div className="lg:col-span-4">
-            <div className="bg-stone-800/70 border border-stone-700/80 rounded-2xl p-6 sm:p-7 backdrop-blur-sm shadow-xl space-y-6">
+            <div className="bg-stone-900/80 border border-stone-700/80 rounded-2xl p-6 sm:p-7 backdrop-blur-md shadow-2xl space-y-6 ring-1 ring-white/5">
               
               {/* Profile Portrait Showcase */}
-              <div className="flex items-center gap-4 sm:gap-5 pb-5 border-b border-stone-700/70">
+              <div className="flex items-center gap-4 sm:gap-5 pb-5 border-b border-stone-800">
                 <div className="relative shrink-0">
                   <button
                     onClick={onOpenPhoto}
                     title="Click to view portrait or upload photo"
-                    className="w-22 h-22 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-amber-500/50 shadow-xl bg-stone-900 ring-4 ring-amber-500/10 group relative block cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-amber-400"
+                    className="w-22 h-22 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-amber-500/50 shadow-xl bg-stone-950 ring-4 ring-amber-500/10 group relative block cursor-pointer text-left focus:outline-none focus:ring-2 focus:ring-amber-400"
                   >
                     <img
                       src={avatarUrl}
@@ -219,23 +221,26 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
                       View / Edit
                     </div>
                   </button>
+
+                  {/* Active radar pulse status badge */}
                   <div
-                    className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 border-2 border-stone-800 flex items-center justify-center text-white shadow pointer-events-none"
+                    className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 border-2 border-stone-900 flex items-center justify-center text-white shadow pointer-events-none"
                     title="Active Faculty & HOD"
                   >
-                    <Check className="w-3.5 h-3.5 stroke-[3]" />
+                    <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping-slow pointer-events-none opacity-75" />
+                    <Check className="w-3.5 h-3.5 stroke-[3] relative z-10" />
                   </div>
                 </div>
 
                 <div className="min-w-0">
-                  <div className="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-400 uppercase tracking-wider mb-1">
-                    <CheckCircle2 className="w-3 h-3 text-amber-400" />
-                    <span>Verified Academic Faculty</span>
+                  <div className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-emerald-400 uppercase tracking-wider mb-1">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse" />
+                    <span>Active Economics Faculty</span>
                   </div>
                   <h3 className="font-serif font-bold text-lg sm:text-xl text-white leading-tight truncate">
                     Dr. Rakshit Bagde
                   </h3>
-                  <p className="text-xs text-stone-300 font-medium mt-0.5">
+                  <p className="text-xs text-amber-300/90 font-medium mt-0.5">
                     HOD Economics & Author
                   </p>
                   <p className="text-[11px] text-stone-400 mt-1">

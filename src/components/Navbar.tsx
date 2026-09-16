@@ -37,26 +37,26 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCv, onOpenSearch }) => {
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-stone-900/95 backdrop-blur-md border-b border-stone-800 text-stone-100 transition-all shadow-sm">
+    <header className="sticky top-0 z-40 bg-stone-950/85 backdrop-blur-xl border-b border-stone-800/80 text-stone-100 transition-all shadow-lg ring-1 ring-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Brand Identity */}
           <a
             href="#home"
-            className="flex items-center gap-3.5 group focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg p-1"
+            className="flex items-center gap-3.5 group focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-xl p-1 transition-all"
           >
             <div className="relative w-10 h-10 shrink-0">
               <img
                 src={avatarUrl}
                 alt={PROFILE_DATA.name}
-                className="w-10 h-10 rounded-full object-cover object-top border-2 border-amber-500/60 shadow-md ring-2 ring-stone-950"
+                className="w-10 h-10 rounded-full object-cover object-top border-2 border-amber-500/60 shadow-md ring-2 ring-stone-900 group-hover:scale-105 transition-transform"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   const fallback = e.currentTarget.parentElement?.querySelector('.brand-fallback');
                   if (fallback) fallback.classList.remove('hidden');
                 }}
               />
-              <div className="brand-fallback hidden w-10 h-10 rounded-lg bg-gradient-to-br from-amber-600 to-amber-700 text-white flex items-center justify-center font-serif font-bold text-lg shadow-inner border border-amber-500/30">
+              <div className="brand-fallback hidden w-10 h-10 rounded-full bg-gradient-to-br from-amber-600 to-amber-700 text-white flex items-center justify-center font-serif font-bold text-sm shadow-inner border border-amber-500/30">
                 RB
               </div>
             </div>
@@ -65,7 +65,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCv, onOpenSearch }) => {
                 <span className="font-serif font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-amber-400 transition-colors">
                   {PROFILE_DATA.name}
                 </span>
-                <span className="hidden md:inline-flex text-[11px] font-sans font-medium px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/25">
+                <span className="hidden md:inline-flex text-[10px] font-sans font-semibold px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/25">
                   Ph.D. | 5x Gold Medalist
                 </span>
               </div>
@@ -76,12 +76,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCv, onOpenSearch }) => {
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 bg-stone-900/60 p-1 rounded-xl border border-stone-800/80">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="px-2.5 py-1.5 rounded-md text-xs xl:text-sm font-medium text-stone-300 hover:text-white hover:bg-stone-800/80 transition-colors"
+                className="px-2.5 py-1.5 rounded-lg text-xs xl:text-xs font-medium text-stone-300 hover:text-white hover:bg-stone-800 transition-all"
               >
                 {link.name}
               </a>
@@ -93,18 +93,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCv, onOpenSearch }) => {
             <button
               onClick={onOpenSearch}
               aria-label="Search site"
-              className="flex items-center gap-2 px-3 py-1.5 text-xs rounded-md bg-stone-800/90 text-stone-300 hover:text-white hover:bg-stone-700 border border-stone-700/60 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500"
+              className="flex items-center gap-2 px-3 py-1.5 text-xs rounded-xl bg-stone-900/80 text-stone-300 hover:text-white hover:bg-stone-800 border border-stone-700/80 transition-all focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
-              <Search className="w-3.5 h-3.5 text-stone-400" />
+              <Search className="w-3.5 h-3.5 text-amber-400" />
               <span className="hidden sm:inline font-sans">Search</span>
-              <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] text-stone-400 bg-stone-900 rounded border border-stone-700">
+              <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[10px] text-stone-400 bg-stone-950 rounded border border-stone-700 font-mono">
                 /
               </kbd>
             </button>
 
             <button
               onClick={onOpenCv}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold bg-amber-600 hover:bg-amber-500 text-white shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-amber-400"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-amber-400"
             >
               <FileDown className="w-3.5 h-3.5" />
               <span>Curriculum Vitae</span>
@@ -114,7 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCv, onOpenSearch }) => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle navigation menu"
-              className="lg:hidden p-2 rounded-md text-stone-400 hover:text-white hover:bg-stone-800 transition-colors"
+              className="lg:hidden p-2 rounded-xl text-stone-400 hover:text-white hover:bg-stone-800 transition-colors"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
