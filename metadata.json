@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Rakshit Bagde Academic Portfolio",
+  "description": "Official academic website and portfolio of Dr. Rakshit Madan Bagde, Assistant Professor and Head of Economics at Late Mansaramji Padole Arts College, featuring research, books, publications, eClassroom lectures, and lecture presentations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
