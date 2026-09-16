@@ -39,7 +39,7 @@ export const PROFILE_DATA: AcademicProfile = {
     ssrn: 'https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5294021',
     webOfScience: 'https://www.webofscience.com/wos/author/record/drrakshitbage',
     halScience: 'https://hal.science/search/index/q/Rakshit+Bagde',
-    youtube: 'https://www.youtube.com/@eClassroom',
+    youtube: 'https://www.youtube.com/@eclassroom2014',
     quora: 'https://www.quora.com/profile/Rakshit-Bagde',
     podcast: 'https://open.spotify.com/show/economics-social-studies-bagde',
     email: 'rakshitbagde@gmail.com',
@@ -1532,55 +1532,305 @@ export const SLIDE_DECKS: SlideDeck[] = [
 
 export const VIDEO_LECTURES: VideoLecture[] = [
   {
-    id: 'vid-1',
-    title: 'Brain-Based Learning: Neurological Principles for High Academic Retention',
-    duration: '28:45',
-    channel: 'eClassroom with Dr. Rakshit Bagde',
-    topic: 'Educational Psychology & Pedagogy',
-    views: '12.4K',
-    summary:
-      'Explains how neuroplasticity, spaced repetition, active recall, and sleep architecture influence long-term memory encoding for competitive exam aspirants and university students.',
+    "id": "yt-zWTXV_rYOnM",
+    "youtubeId": "zWTXV_rYOnM",
+    "title": "भारतीय संविधान और सतत विकास",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Constitutional Economics",
+    "views": "13 views • 2 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारतीय संविधान और सतत विकास\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
   },
   {
-    id: 'vid-2',
-    title: 'Dr. B.R. Ambedkar’s Theory of State Socialism & Indian Agriculture',
-    duration: '42:10',
-    channel: 'eClassroom with Dr. Rakshit Bagde',
-    topic: 'Ambedkarite Economics',
-    views: '18.9K',
-    summary:
-      'Detailed breakdown of Dr. Ambedkar\'s economic vision presented in "States and Minorities" (1947), exploring collective farming, state insurance, and industrial modernization.',
+    "id": "yt-_MIHtRZfjfY",
+    "youtubeId": "_MIHtRZfjfY",
+    "title": "डिजिटल पेमेंट और ग्रामीण विकास [Digital payments and rural development]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Digital Inclusion & UPI",
+    "views": "1 view • 2 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"डिजिटल पेमेंट और ग्रामीण विकास [Digital payments and rural development]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
   },
   {
-    id: 'vid-3',
-    title: 'Understanding Gross Domestic Product (GDP): Real vs Nominal & Deflator',
-    duration: '34:20',
-    channel: 'eClassroom with Dr. Rakshit Bagde',
-    topic: 'Macroeconomics',
-    views: '24.1K',
-    summary:
-      'A crystal-clear classroom lecture on calculating GDP, GNP, NNP at factor cost, base year price index adjustments, and why GDP alone is an imperfect metric of societal well-being.',
+    "id": "yt-cMSYXsLCC8w",
+    "youtubeId": "cMSYXsLCC8w",
+    "title": "भारत की राजकोषीय पहेली [Sixteenth Finance Commission (FC-16) Report]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Public Finance & Fiscal Policy",
+    "views": "6 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारत की राजकोषीय पहेली [Sixteenth Finance Commission (FC-16) Report]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
   },
   {
-    id: 'vid-4',
-    title: 'Emotional Intelligence (EQ) in Teaching & Everyday Decision-Making',
-    duration: '22:15',
-    channel: 'eClassroom with Dr. Rakshit Bagde',
-    topic: 'Life Skills & Academic Leadership',
-    views: '9.8K',
-    summary:
-      'Practical guidance on cultivating self-awareness, empathy in student mentoring, stress regulation during examination seasons, and constructive conflict resolution.',
+    "id": "yt-1y8gAb1f_WI",
+    "youtubeId": "1y8gAb1f_WI",
+    "title": "भारतीय केंद्रीय बजट 2026 27 [Indian Union Budget 2026-27]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Public Finance & Fiscal Policy",
+    "views": "9 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारतीय केंद्रीय बजट 2026 27 [Indian Union Budget 2026-27]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
   },
   {
-    id: 'vid-5',
-    title: 'Digital Payments & UPI: How Cashless Systems Transform Rural Markets',
-    duration: '31:50',
-    channel: 'eClassroom with Dr. Rakshit Bagde',
-    topic: 'Development Economics',
-    views: '15.6K',
-    summary:
-      'Empirical insights into the speed of monetary circulation, credit history creation, and financial resilience among small vendors and farmer producer organizations.',
+    "id": "yt-LtDTCuuUNzc",
+    "youtubeId": "LtDTCuuUNzc",
+    "title": "सूचना का अधिकार 2005 [Right to Information Act 2005]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Economics & Social Studies",
+    "views": "1 view • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"सूचना का अधिकार 2005 [Right to Information Act 2005]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
   },
+  {
+    "id": "yt-_7C21ft857E",
+    "youtubeId": "_7C21ft857E",
+    "title": "शूद्र कौन थे? [Who were the Shudras?]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "2 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"शूद्र कौन थे? [Who were the Shudras?]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-UqG0QQz-Luo",
+    "youtubeId": "UqG0QQz-Luo",
+    "title": "रुपये की समस्या: एक विश्लेषण [The rupee problem: An analysis]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Indian Economy & Currency",
+    "views": "5 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"रुपये की समस्या: एक विश्लेषण [The rupee problem: An analysis]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-ArsSVH8h5Zk",
+    "youtubeId": "ArsSVH8h5Zk",
+    "title": "भारत में जातियाँ: एक 1916 का सिद्धांत [Castes in India: A 1916 theory]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "2 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारत में जातियाँ: एक 1916 का सिद्धांत [Castes in India: A 1916 theory]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-HyEF5ZxgLyA",
+    "youtubeId": "HyEF5ZxgLyA",
+    "title": "बुद्ध या कार्ल मार्क्स [Buddha or Karl Marx]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "3 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"बुद्ध या कार्ल मार्क्स [Buddha or Karl Marx]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-FW8cUr-wa1Q",
+    "youtubeId": "FW8cUr-wa1Q",
+    "title": "बुद्ध का त्याग  एक राजनीतिक विरोध [Buddha's renunciation was a political protest.]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "1 view • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"बुद्ध का त्याग  एक राजनीतिक विरोध [Buddha's renunciation was a political protest.]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-6zIzvcc9PK0",
+    "youtubeId": "6zIzvcc9PK0",
+    "title": "जाति का विनाश [Annihilation of caste]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "1 view • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"जाति का विनाश [Annihilation of caste]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-gCAO6kisc_M",
+    "youtubeId": "gCAO6kisc_M",
+    "title": "छोटे खेत, बड़ी समस्या [Small farms, big problems]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Agricultural Economics",
+    "views": "1 view • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"छोटे खेत, बड़ी समस्या [Small farms, big problems]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-c0inccZcSpY",
+    "youtubeId": "c0inccZcSpY",
+    "title": "एक कंपनी का अंतिम बिल [A company's final bill]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Economics & Social Studies",
+    "views": "1 view • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"एक कंपनी का अंतिम बिल [A company's final bill]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-JcoKU7cZyNM",
+    "youtubeId": "JcoKU7cZyNM",
+    "title": "डॉ. आंबेडकर का एक अलिखित संविधान [Dr. Ambedkar's unwritten constitution]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Constitutional Economics",
+    "views": "2 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"डॉ. आंबेडकर का एक अलिखित संविधान [Dr. Ambedkar's unwritten constitution]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-mYweTa9ZtW4",
+    "youtubeId": "mYweTa9ZtW4",
+    "title": "भारत का आर्थिक दृष्टिकोण 2026 [India's Economic Outlook 2026]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Indian Economy & Currency",
+    "views": "2 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारत का आर्थिक दृष्टिकोण 2026 [India's Economic Outlook 2026]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-3R3ZBKFmmjA",
+    "youtubeId": "3R3ZBKFmmjA",
+    "title": "उच्च शिक्षा संस्थानों में समानता नियम, 2026 [Equality Regulations in HEI, 2026]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Constitutional Economics",
+    "views": "16 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"उच्च शिक्षा संस्थानों में समानता नियम, 2026 [Equality Regulations in HEI, 2026]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-sgBEYQTS3wM",
+    "youtubeId": "sgBEYQTS3wM",
+    "title": "भारत का वैश्विक रिपोर्ट कार्ड [Global Report Card of India]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Economics & Social Studies",
+    "views": "2 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारत का वैश्विक रिपोर्ट कार्ड [Global Report Card of India]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-p3tu_qIQPwM",
+    "youtubeId": "p3tu_qIQPwM",
+    "title": "भारत में लिंग आधारित हिंसा [Gender Based Violence in India]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Economics & Social Studies",
+    "views": "117 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारत में लिंग आधारित हिंसा [Gender Based Violence in India]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-g0_OIAToyTc",
+    "youtubeId": "g0_OIAToyTc",
+    "title": "विकसित भारत 2047 [Developed India 2047]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Economics & Social Studies",
+    "views": "6 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"विकसित भारत 2047 [Developed India 2047]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-XI4br3f9jaI",
+    "youtubeId": "XI4br3f9jaI",
+    "title": "इंडस्ट्री 5.0 [Industry 5 0]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Modern Industrial Trends",
+    "views": "1 view • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"इंडस्ट्री 5.0 [Industry 5 0]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-rKH6QZwEMVY",
+    "youtubeId": "rKH6QZwEMVY",
+    "title": "भारतीय अर्थव्यवस्था [Indian Economy]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Indian Economy & Currency",
+    "views": "10 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारतीय अर्थव्यवस्था [Indian Economy]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-ANVrX9hcucI",
+    "youtubeId": "ANVrX9hcucI",
+    "title": "वेब 3 [WEB 3]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Modern Industrial Trends",
+    "views": "4 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"वेब 3 [WEB 3]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-_cLai_zUOB8",
+    "youtubeId": "_cLai_zUOB8",
+    "title": "जीएसटी 2.0 [GST 2.0]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Public Finance & Fiscal Policy",
+    "views": "36 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"जीएसटी 2.0 [GST 2.0]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-t7wl24Ne-ac",
+    "youtubeId": "t7wl24Ne-ac",
+    "title": "जाती व्यवस्था [caste system]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "75 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"जाती व्यवस्था [caste system]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-KAG4_v1XYF8",
+    "youtubeId": "KAG4_v1XYF8",
+    "title": "अर्थशास्त्री डॉ. आंबेडकर [Economist Dr. Ambedkar]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Ambedkarite Economics & Philosophy",
+    "views": "24 views • 7 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"अर्थशास्त्री डॉ. आंबेडकर [Economist Dr. Ambedkar]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-6p2fubwCHlA",
+    "youtubeId": "6p2fubwCHlA",
+    "title": "भारत का शिक्षा विरोधाभास [India's education paradox]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Higher Education & Policy",
+    "views": "9 views • 8 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"भारत का शिक्षा विरोधाभास [India's education paradox]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-jYCsKYkuy58",
+    "youtubeId": "jYCsKYkuy58",
+    "title": "वित्तीय समावेशन से डिजिटल भारत [Financial inclusion through Digital India]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Digital Inclusion & UPI",
+    "views": "12 views • 8 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"वित्तीय समावेशन से डिजिटल भारत [Financial inclusion through Digital India]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-O1MeGmd8zkw",
+    "youtubeId": "O1MeGmd8zkw",
+    "title": "जीएसटी: वादा बनाम हकीकत [GST: Promise versus reality]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Public Finance & Fiscal Policy",
+    "views": "21 views • 8 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"जीएसटी: वादा बनाम हकीकत [GST: Promise versus reality]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-z0eBXvu0A24",
+    "youtubeId": "z0eBXvu0A24",
+    "title": "संविधान में आर्थिक प्रावधान [Economic provisions in the Constitution]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Constitutional Economics",
+    "views": "13 views • 8 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"संविधान में आर्थिक प्रावधान [Economic provisions in the Constitution]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  },
+  {
+    "id": "yt-Oq0YybNkLV0",
+    "youtubeId": "Oq0YybNkLV0",
+    "title": "आर्थिक स्वास्थ्य जाँच  2014-2020 [Economic health check 2014-2020]",
+    "duration": "12:00",
+    "channel": "eClassroom",
+    "topic": "Indian Economy & Currency",
+    "views": "16 views • 8 months ago ",
+    "summary": "Comprehensive academic video lecture by Dr. Rakshit Bagde analyzing \"आर्थिक स्वास्थ्य जाँच  2014-2020 [Economic health check 2014-2020]\". Produced for collegiate students, researchers, and public examinations aspirants on the official eClassroom YouTube channel."
+  }
 ];
 
 export const PODCAST_EPISODES: PodcastEpisode[] = [
