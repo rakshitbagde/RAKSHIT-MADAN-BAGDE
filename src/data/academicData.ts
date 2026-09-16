@@ -35,8 +35,8 @@ export const PROFILE_DATA: AcademicProfile = {
   ],
   socialLinks: {
     googleScholar: 'https://scholar.google.com/citations?user=Xvz3xLQAAAAJ&hl=en',
-    orcid: 'https://orcid.org/0000-0002-3921-8190',
-    ssrn: 'https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=5294021',
+    orcid: 'https://orcid.org/0000-0002-7507-0244',
+    ssrn: 'https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4770534',
     webOfScience: 'https://www.webofscience.com/wos/author/record/drrakshitbage',
     halScience: 'https://hal.science/search/index/q/Rakshit+Bagde',
     youtube: 'https://www.youtube.com/@eclassroom2014',

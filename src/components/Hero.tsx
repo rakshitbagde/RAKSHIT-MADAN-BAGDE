@@ -28,7 +28,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
   const [avatarUrl] = useAvatar();
 
   const handleCopyOrcid = () => {
-    navigator.clipboard.writeText('0000-0002-3921-8190');
+    navigator.clipboard.writeText('0000-0002-7507-0244');
     setCopiedOrcid(true);
     setTimeout(() => setCopiedOrcid(false), 2000);
   };
@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
                     rel="noreferrer"
                     className="hover:text-amber-400 font-mono"
                   >
-                    0000-0002-3921-8190
+                    0000-0002-7507-0244
                   </a>
                   <button
                     onClick={handleCopyOrcid}

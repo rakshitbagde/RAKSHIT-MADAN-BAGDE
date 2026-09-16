@@ -93,11 +93,25 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
               </div>
 
               <div className="mt-3 flex flex-wrap gap-2 text-[11px] font-mono text-stone-500">
-                <span>ORCID: 0000-0002-3921-8190</span>
+                <a
+                  href={PROFILE_DATA.socialLinks.orcid}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-800 underline"
+                >
+                  ORCID: 0000-0002-7507-0244
+                </a>
                 <span>•</span>
                 <span>Google Scholar: Dr. Rakshit Bagde</span>
                 <span>•</span>
-                <span>SSRN Author ID: 5294021</span>
+                <a
+                  href={PROFILE_DATA.socialLinks.ssrn}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-800 underline"
+                >
+                  SSRN Author ID: 4770534
+                </a>
               </div>
             </div>
 

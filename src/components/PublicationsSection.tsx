@@ -13,7 +13,7 @@ import {
   Share2,
   GraduationCap,
 } from 'lucide-react';
-import { PUBLICATIONS } from '../data/academicData';
+import { PUBLICATIONS, PROFILE_DATA } from '../data/academicData';
 import { Publication, PublicationType } from '../types';
 
 export const PublicationsSection: React.FC = () => {
@@ -106,15 +106,37 @@ export const PublicationsSection: React.FC = () => {
             <div className="w-16 h-1 bg-amber-600 mt-3 rounded-full" />
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2.5">
             <a
-              href="https://scholar.google.com/citations?user=Xvz3xLQAAAAJ&hl=en"
+              href={PROFILE_DATA.socialLinks.orcid}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold shadow-xs transition-colors border border-stone-700"
+            >
+              <span className="text-[#a6ce39] font-bold font-mono">iD</span>
+              <span>ORCID (0000-0002-7507-0244)</span>
+              <ExternalLink className="w-3 h-3 opacity-80" />
+            </a>
+
+            <a
+              href={PROFILE_DATA.socialLinks.ssrn}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-blue-900 hover:bg-blue-800 text-white text-xs font-semibold shadow-xs transition-colors border border-blue-700"
+            >
+              <span className="font-serif font-bold text-sky-300">SSRN</span>
+              <span>Author (4770534)</span>
+              <ExternalLink className="w-3 h-3 opacity-80" />
+            </a>
+
+            <a
+              href={PROFILE_DATA.socialLinks.googleScholar}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-700 hover:bg-amber-800 text-white text-xs font-semibold shadow-xs transition-colors"
             >
               <GraduationCap className="w-4 h-4" />
-              <span>Google Scholar Profile</span>
+              <span>Google Scholar</span>
               <ExternalLink className="w-3 h-3 opacity-80" />
             </a>
 
