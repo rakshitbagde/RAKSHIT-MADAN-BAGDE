@@ -261,8 +261,24 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
 
           {/* Digital Initiatives */}
           <div className="space-y-2 pt-2 border-t border-stone-200 text-xs text-stone-600">
-            <strong>Open Digital Pedagogy: </strong>
-            Creator of "eClassroom" educational YouTube channel and host of "Economics and Social Studies" weekly podcast simplifying economic issues for collegiate students.
+            <div>
+              <strong>Research Supervisions: </strong>
+              <span>Guided 10+ students in economic research dissertations and socio-economic empirical investigations.</span>
+            </div>
+            <div>
+              <strong>Open Digital Pedagogy: </strong>
+              Creator of &ldquo;eClassroom&rdquo; educational YouTube channel and host of the{' '}
+              <a
+                href={PROFILE_DATA.socialLinks.podcast}
+                target="_blank"
+                rel="noreferrer"
+                className="text-emerald-700 font-semibold underline inline-flex items-center gap-0.5"
+              >
+                <span>&ldquo;Economics and Social Studies&rdquo; Spotify podcast</span>
+                <ExternalLink className="w-2.5 h-2.5" />
+              </a>
+              {' '}simplifying economic policy and theory for collegiate students.
+            </div>
           </div>
 
         </div>

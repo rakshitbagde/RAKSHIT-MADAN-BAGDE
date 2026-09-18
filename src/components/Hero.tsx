@@ -14,6 +14,7 @@ import {
   Mail,
   Building2,
   MapPin,
+  Headphones,
 } from 'lucide-react';
 import { PROFILE_DATA } from '../data/academicData';
 import { useAvatar } from '../utils/avatar';
@@ -157,6 +158,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
                   <Video className="w-3 h-3 text-red-400" />
                   <span>eClassroom Channel</span>
                   <ExternalLink className="w-3 h-3 text-red-400" />
+                </a>
+
+                <a
+                  href={PROFILE_DATA.socialLinks.podcast}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-medium bg-emerald-950/40 text-emerald-300 hover:text-white hover:bg-emerald-900/60 border border-emerald-800/40 transition-colors"
+                  title="Economics and Social Studies Podcast on Spotify"
+                >
+                  <Headphones className="w-3 h-3 text-emerald-400" />
+                  <span>Spotify Podcast</span>
+                  <ExternalLink className="w-3 h-3 text-emerald-400" />
                 </a>
               </div>
             </div>

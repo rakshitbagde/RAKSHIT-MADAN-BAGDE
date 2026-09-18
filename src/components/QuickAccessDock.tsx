@@ -9,6 +9,7 @@ import {
   ArrowUp,
   Sparkles,
   ExternalLink,
+  Headphones,
 } from 'lucide-react';
 import { PROFILE_DATA } from '../data/academicData';
 
@@ -83,6 +84,17 @@ export const QuickAccessDock: React.FC<QuickAccessDockProps> = ({
         >
           <Video className="w-3.5 h-3.5 text-red-400" />
           <span className="hidden sm:inline">eClassroom</span>
+        </a>
+
+        <a
+          href={PROFILE_DATA.socialLinks.podcast}
+          target="_blank"
+          rel="noreferrer"
+          title="Listen to 'Economics and Social Studies' on Spotify"
+          className="flex items-center gap-1 px-2.5 py-2 rounded-xl text-xs font-medium text-emerald-300 hover:text-white hover:bg-emerald-950/60 transition-colors"
+        >
+          <Headphones className="w-3.5 h-3.5 text-emerald-400" />
+          <span className="hidden lg:inline">Podcast</span>
         </a>
 
         <a

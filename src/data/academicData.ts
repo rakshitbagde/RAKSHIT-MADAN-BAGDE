@@ -41,7 +41,7 @@ export const PROFILE_DATA: AcademicProfile = {
     halScience: 'https://hal.science/search/index/q/Rakshit+Bagde',
     youtube: 'https://www.youtube.com/@eclassroom2014',
     quora: 'https://www.quora.com/profile/Rakshit-Bagde',
-    podcast: 'https://open.spotify.com/show/economics-social-studies-bagde',
+    podcast: 'https://open.spotify.com/show/6DChtIK8p7hjvAWaSkzFkL?si=425ee21682644353',
     email: 'rakshitbagde@gmail.com',
   },
 };

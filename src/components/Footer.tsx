@@ -131,6 +131,15 @@ export const Footer: React.FC = () => {
                 <ExternalLink className="w-3 h-3 text-stone-500" />
               </a>
               <a
+                href={PROFILE_DATA.socialLinks.podcast}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded bg-emerald-950/40 hover:bg-emerald-900/60 text-emerald-300 hover:text-white flex items-center justify-between border border-emerald-800/50"
+              >
+                <span>Economics Podcast (Spotify)</span>
+                <ExternalLink className="w-3 h-3 text-emerald-400" />
+              </a>
+              <a
                 href={PROFILE_DATA.socialLinks.quora}
                 target="_blank"
                 rel="noreferrer"

@@ -147,7 +147,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenPhoto }) => {
               His scholarship bridges quantitative macroeconomic analysis with the social economics of <strong>Dr. B.R. Ambedkar</strong>. Having earned a Ph.D. analyzing Dr. Ambedkar's agrarian thought and land consolidation doctrines, Dr. Bagde has made significant contributions to how economic historians and contemporary agricultural economists understand smallholder farming viability, capital-labor proportionality, and cooperative agricultural structures.
             </p>
             <p>
-              Beyond the traditional classroom, Dr. Bagde is a passionate proponent of open digital education. Through his YouTube channel <a href="https://www.youtube.com/@eclassroom2014" target="_blank" rel="noreferrer" className="text-red-700 font-semibold hover:underline">eClassroom (@eclassroom2014)</a>, the <strong>"Economics and Social Studies"</strong> podcast, and over 25 published books and textbooks, he brings collegiate-level economics, pedagogical science, and current economic policy debates directly to students from tier-2 and tier-3 rural institutions across India.
+              Beyond the traditional classroom, Dr. Bagde is a passionate proponent of open digital education. Through his YouTube channel <a href="https://www.youtube.com/@eclassroom2014" target="_blank" rel="noreferrer" className="text-red-700 font-semibold hover:underline">eClassroom (@eclassroom2014)</a>, the <a href={PROFILE_DATA.socialLinks.podcast} target="_blank" rel="noreferrer" className="text-emerald-700 font-semibold hover:underline inline-flex items-center gap-0.5"><span>&ldquo;Economics and Social Studies&rdquo; Spotify podcast</span></a>, and over 25 published books and textbooks, he brings collegiate-level economics, pedagogical science, and current economic policy debates directly to students from tier-2 and tier-3 rural institutions across India.
             </p>
 
             <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -162,7 +162,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenPhoto }) => {
                 <Briefcase className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-xs font-bold text-stone-900 uppercase">Research Supervisions</h4>
-                  <p className="text-xs text-stone-600 mt-0.5">Guided 60+ postgraduate economic research dissertations</p>
+                  <p className="text-xs text-stone-600 mt-0.5">Guided 10+ students in economic research</p>
                 </div>
               </div>
             </div>

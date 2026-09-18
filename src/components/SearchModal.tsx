@@ -8,8 +8,10 @@ import {
   Video,
   GraduationCap,
   ArrowRight,
+  Headphones,
+  ExternalLink,
 } from 'lucide-react';
-import { PUBLICATIONS, COURSES, SLIDE_DECKS, VIDEO_LECTURES } from '../data/academicData';
+import { PUBLICATIONS, COURSES, SLIDE_DECKS, VIDEO_LECTURES, PODCAST_EPISODES, PROFILE_DATA } from '../data/academicData';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -73,8 +75,17 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       ).slice(0, 3)
     : [];
 
+  const matchedPodcasts = q
+    ? PODCAST_EPISODES.filter(
+        (p) =>
+          q === 'podcast' ||
+          p.title.toLowerCase().includes(q) ||
+          p.description.toLowerCase().includes(q)
+      ).slice(0, 3)
+    : [];
+
   const totalMatches =
-    matchedPubs.length + matchedCourses.length + matchedSlides.length + matchedVideos.length;
+    matchedPubs.length + matchedCourses.length + matchedSlides.length + matchedVideos.length + matchedPodcasts.length;
 
   return (
     <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-start justify-center p-4 pt-16 sm:pt-24">
@@ -114,7 +125,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
               <Search className="w-8 h-8 mx-auto text-stone-300 mb-2" />
               <p>Type keywords to search across Dr. Bagde's scholarship.</p>
               <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
-                {['UPI', 'Ambedkar', 'Agriculture', 'NEP 2020', 'Macroeconomics'].map((tag) => (
+                {['UPI', 'Ambedkar', 'Agriculture', 'NEP 2020', 'Macroeconomics', 'Podcast'].map((tag) => (
                   <button
                     key={tag}
                     onClick={() => setQuery(tag)}
@@ -235,6 +246,39 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                     </span>
                     <h4 className="font-serif font-bold text-xs sm:text-sm text-stone-900">
                       {v.title}
+                    </h4>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Matched Podcasts */}
+          {matchedPodcasts.length > 0 && (
+            <div className="space-y-2">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-emerald-800 flex items-center gap-1.5">
+                <Headphones className="w-3.5 h-3.5" />
+                <span>&ldquo;Economics and Social Studies&rdquo; Spotify Podcast ({matchedPodcasts.length})</span>
+              </div>
+              <div className="space-y-1.5">
+                {matchedPodcasts.map((p) => (
+                  <a
+                    key={p.id}
+                    href={PROFILE_DATA.socialLinks.podcast}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={onClose}
+                    className="block p-3 rounded-lg bg-emerald-50/50 hover:bg-emerald-100/60 border border-emerald-200/80 transition-colors group"
+                  >
+                    <div className="flex items-center justify-between text-[10px] font-mono text-emerald-800 mb-0.5">
+                      <span>Episode {p.episodeNumber} • {p.duration}</span>
+                      <span className="inline-flex items-center gap-1 text-emerald-700 font-semibold group-hover:underline">
+                        <span>Open on Spotify</span>
+                        <ExternalLink className="w-2.5 h-2.5" />
+                      </span>
+                    </div>
+                    <h4 className="font-serif font-bold text-xs sm:text-sm text-stone-900 group-hover:text-emerald-950">
+                      {p.title}
                     </h4>
                   </a>
                 ))}
