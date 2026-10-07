@@ -148,6 +148,26 @@ export const Footer: React.FC = () => {
                 <span>Quora Space</span>
                 <ExternalLink className="w-3 h-3 text-stone-500" />
               </a>
+              <a
+                href={PROFILE_DATA.socialLinks.blog}
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 rounded bg-blue-950/40 hover:bg-blue-900/60 text-blue-300 hover:text-white flex items-center justify-between border border-blue-800/50"
+              >
+                <span>WordPress Blog</span>
+                <ExternalLink className="w-3 h-3 text-blue-400" />
+              </a>
+              {PROFILE_DATA.socialLinks.scribd && (
+                <a
+                  href={PROFILE_DATA.socialLinks.scribd}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="p-2 rounded bg-red-950/40 hover:bg-red-900/60 text-red-300 hover:text-white flex items-center justify-between border border-red-800/50"
+                >
+                  <span>Scribd Profile</span>
+                  <ExternalLink className="w-3 h-3 text-red-400" />
+                </a>
+              )}
             </div>
 
             <div className="pt-2">

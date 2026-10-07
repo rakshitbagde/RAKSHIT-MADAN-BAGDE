@@ -15,6 +15,7 @@ import {
   Building2,
   MapPin,
   Headphones,
+  Globe,
 } from 'lucide-react';
 import { PROFILE_DATA } from '../data/academicData';
 import { useAvatar } from '../utils/avatar';
@@ -171,6 +172,34 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onOpenPhoto }) => {
                   <span>Spotify Podcast</span>
                   <ExternalLink className="w-3 h-3 text-emerald-400" />
                 </a>
+
+                {PROFILE_DATA.socialLinks.blog && (
+                  <a
+                    href={PROFILE_DATA.socialLinks.blog}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-medium bg-blue-950/40 text-blue-300 hover:text-white hover:bg-blue-900/60 border border-blue-800/40 transition-colors"
+                    title="Official Academic Blog & Research Notes"
+                  >
+                    <Globe className="w-3 h-3 text-blue-400" />
+                    <span>WordPress Blog</span>
+                    <ExternalLink className="w-3 h-3 text-blue-400" />
+                  </a>
+                )}
+
+                {PROFILE_DATA.socialLinks.scribd && (
+                  <a
+                    href={PROFILE_DATA.socialLinks.scribd}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-medium bg-red-950/40 text-red-300 hover:text-white hover:bg-red-900/60 border border-red-800/40 transition-colors"
+                    title="Dr. Rakshit Madan Bagde on Scribd (Books, Research & Publications)"
+                  >
+                    <BookOpen className="w-3 h-3 text-red-400" />
+                    <span>Scribd</span>
+                    <ExternalLink className="w-3 h-3 text-red-400" />
+                  </a>
+                )}
               </div>
             </div>
 

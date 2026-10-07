@@ -23,6 +23,8 @@ export interface AcademicProfile {
     youtube?: string;
     quora?: string;
     podcast?: string;
+    blog?: string;
+    scribd?: string;
     email: string;
   };
 }

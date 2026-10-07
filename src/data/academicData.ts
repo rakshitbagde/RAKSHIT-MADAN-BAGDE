@@ -42,6 +42,8 @@ export const PROFILE_DATA: AcademicProfile = {
     youtube: 'https://www.youtube.com/@eclassroom2014',
     quora: 'https://www.quora.com/profile/Rakshit-Bagde',
     podcast: 'https://open.spotify.com/show/6DChtIK8p7hjvAWaSkzFkL?si=425ee21682644353',
+    blog: 'https://rakshitbagde.wordpress.com/',
+    scribd: 'https://www.scribd.com/user/399145005/Dr-Rakshit-Madan-Bagde',
     email: 'rakshitbagde@gmail.com',
   },
 };

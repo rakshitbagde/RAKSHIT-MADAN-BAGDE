@@ -10,6 +10,7 @@ import {
   ArrowRight,
   Headphones,
   ExternalLink,
+  Globe,
 } from 'lucide-react';
 import { PUBLICATIONS, COURSES, SLIDE_DECKS, VIDEO_LECTURES, PODCAST_EPISODES, PROFILE_DATA } from '../data/academicData';
 
@@ -84,8 +85,29 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       ).slice(0, 3)
     : [];
 
+  const matchedBlog = Boolean(
+    q &&
+      ('blog'.includes(q) ||
+        'wordpress'.includes(q) ||
+        'essay'.includes(q) ||
+        'writings'.includes(q))
+  );
+
+  const matchedScribd = Boolean(
+    q &&
+      ('scribd'.includes(q) ||
+        'reading'.includes(q) ||
+        'monograph'.includes(q))
+  );
+
   const totalMatches =
-    matchedPubs.length + matchedCourses.length + matchedSlides.length + matchedVideos.length + matchedPodcasts.length;
+    matchedPubs.length +
+    matchedCourses.length +
+    matchedSlides.length +
+    matchedVideos.length +
+    matchedPodcasts.length +
+    (matchedBlog ? 1 : 0) +
+    (matchedScribd ? 1 : 0);
 
   return (
     <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-start justify-center p-4 pt-16 sm:pt-24">
@@ -125,7 +147,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
               <Search className="w-8 h-8 mx-auto text-stone-300 mb-2" />
               <p>Type keywords to search across Dr. Bagde's scholarship.</p>
               <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
-                {['UPI', 'Ambedkar', 'Agriculture', 'NEP 2020', 'Macroeconomics', 'Podcast'].map((tag) => (
+                {['UPI', 'Ambedkar', 'Agriculture', 'NEP 2020', 'Macroeconomics', 'Podcast', 'Blog', 'Scribd'].map((tag) => (
                   <button
                     key={tag}
                     onClick={() => setQuery(tag)}
@@ -286,6 +308,71 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             </div>
           )}
 
+          {/* Matched Blog */}
+          {matchedBlog && PROFILE_DATA.socialLinks.blog && (
+            <div className="space-y-2">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-blue-800 flex items-center gap-1.5">
+                <Globe className="w-3.5 h-3.5" />
+                <span>Official Academic Blog</span>
+              </div>
+              <div className="space-y-1.5">
+                <a
+                  href={PROFILE_DATA.socialLinks.blog}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={onClose}
+                  className="block p-3 rounded-lg bg-blue-50/60 hover:bg-blue-100/70 border border-blue-200/80 transition-colors group"
+                >
+                  <div className="flex items-center justify-between text-[10px] font-mono text-blue-800 mb-0.5">
+                    <span>WordPress Publication & Essays</span>
+                    <span className="inline-flex items-center gap-1 text-blue-700 font-semibold group-hover:underline">
+                      <span>Visit Blog</span>
+                      <ExternalLink className="w-2.5 h-2.5" />
+                    </span>
+                  </div>
+                  <h4 className="font-serif font-bold text-xs sm:text-sm text-stone-900 group-hover:text-blue-950">
+                    rakshitbagde.wordpress.com
+                  </h4>
+                  <p className="text-xs text-stone-600 mt-1 line-clamp-2">
+                    Commentaries, economic thoughts, pedagogical insights, and academic analyses by Dr. Rakshit Madan Bagde.
+                  </p>
+                </a>
+              </div>
+            </div>
+          )}
+
+          {/* Matched Scribd */}
+          {matchedScribd && PROFILE_DATA.socialLinks.scribd && (
+            <div className="space-y-2">
+              <div className="text-[11px] font-bold uppercase tracking-wider text-red-800 flex items-center gap-1.5">
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Digital Documents on Scribd</span>
+              </div>
+              <div className="space-y-1.5">
+                <a
+                  href={PROFILE_DATA.socialLinks.scribd}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={onClose}
+                  className="block p-3 rounded-lg bg-red-50/60 hover:bg-red-100/70 border border-red-200/80 transition-colors group"
+                >
+                  <div className="flex items-center justify-between text-[10px] font-mono text-red-800 mb-0.5">
+                    <span>Scribd Document Library</span>
+                    <span className="inline-flex items-center gap-1 text-red-700 font-semibold group-hover:underline">
+                      <span>View on Scribd</span>
+                      <ExternalLink className="w-2.5 h-2.5" />
+                    </span>
+                  </div>
+                  <h4 className="font-serif font-bold text-xs sm:text-sm text-stone-900 group-hover:text-red-950">
+                    Dr. Rakshit Madan Bagde on Scribd
+                  </h4>
+                  <p className="text-xs text-stone-600 mt-1 line-clamp-2">
+                    Browse published academic books, monographs, course readers, and research papers on Scribd.
+                  </p>
+                </a>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Footer info */}

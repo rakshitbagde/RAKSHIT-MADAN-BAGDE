@@ -112,6 +112,28 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
                 >
                   SSRN Author ID: 4770534
                 </a>
+                <span>•</span>
+                <a
+                  href={PROFILE_DATA.socialLinks.blog}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-amber-800 underline"
+                >
+                  Blog: rakshitbagde.wordpress.com
+                </a>
+                {PROFILE_DATA.socialLinks.scribd && (
+                  <>
+                    <span>•</span>
+                    <a
+                      href={PROFILE_DATA.socialLinks.scribd}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover:text-amber-800 underline"
+                    >
+                      Scribd: Dr-Rakshit-Madan-Bagde
+                    </a>
+                  </>
+                )}
               </div>
             </div>
 
@@ -279,6 +301,36 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
               </a>
               {' '}simplifying economic policy and theory for collegiate students.
             </div>
+            <div>
+              <strong>Academic Writings & Blog: </strong>
+              Author of analytical commentaries and economic perspectives on{' '}
+              <a
+                href={PROFILE_DATA.socialLinks.blog}
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-700 font-semibold underline inline-flex items-center gap-0.5"
+              >
+                <span>rakshitbagde.wordpress.com</span>
+                <ExternalLink className="w-2.5 h-2.5" />
+              </a>
+              .
+            </div>
+            {PROFILE_DATA.socialLinks.scribd && (
+              <div>
+                <strong>Digital Document Repository & Scribd: </strong>
+                Monographs, presentations, and educational readings hosted on{' '}
+                <a
+                  href={PROFILE_DATA.socialLinks.scribd}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-red-700 font-semibold underline inline-flex items-center gap-0.5"
+                >
+                  <span>Scribd (@Dr-Rakshit-Madan-Bagde)</span>
+                  <ExternalLink className="w-2.5 h-2.5" />
+                </a>
+                .
+              </div>
+            )}
           </div>
 
         </div>
